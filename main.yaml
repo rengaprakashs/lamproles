@@ -1,0 +1,7 @@
+---
+- hosts: roles
+  become: yes
+  roles:
+     - webserver
+     - mysql
+     - php
