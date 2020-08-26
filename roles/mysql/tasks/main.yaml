@@ -1,6 +1,6 @@
 - name: Install LAMP Packages
   apt: name={{ item }} update_cache=yes state=latest
-  loop: [ 'mysql-server', 'python3-pymysql', 'php', 'php-mysql' ]
+  loop: [ 'mysql-server', 'python3-pymysql', 'php', 'php-mysql' , 'python-mysqldb' ]
 - name: Sets the root password
   mysql_user:
     name: root
